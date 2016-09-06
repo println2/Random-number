@@ -1,0 +1,32 @@
+if we toss a die we can get random number. 
+if we pick from a deck of cards we can get a random number.
+instially take a number:
+    x = 23
+this is first random number in order to get second random number
+we can multiply 
+	x1 = 23 *23 = 529
+	x2 = 539*529 = 279841
+	....................
+
+and so on we can get random numbers.
+
+In order to get random number between the ranges.
+
+Note:
+firstnumber in range + some random number % number of terms in range 
+
+so if we want to get radom number between 6 and 15
+E.g-1:
+	first number in range(7)+random number(23)% 8
+	7+7
+	14
+E.g-2:
+	first number in range(7)+random number(529)% 8
+	7+1
+	8
+some time this can be predictable in order to overcome we can take time in milliseconds i.e. unix time in milliseconds( from 1970-01-01). we this we can find random numbers.
+
+Pseudo code:
+random_number(name):
+	return name+" "+str(7+int(time.time())%8)
+
